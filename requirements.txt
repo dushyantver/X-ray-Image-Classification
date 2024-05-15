@@ -1,0 +1,14 @@
+bentoml
+torchvision
+joblib
+tqdm
+pip-chill
+wincertstore
+
+pytest
+tox
+flake8
+mypy
+black
+
+-e .
