@@ -34,7 +34,7 @@ class Data_ingestion:
         try:
             self.get_data_from_s3()
 
-            data_ingestion_artifact: data_ingestion_artifact = data_ingestion_artifact(
+            Data_ingestion_artifact: data_ingestion_artifact = data_ingestion_artifact(
                 train_file_path=self.data_ingestion_config.train_data_path,
                 test_file_path=self.data_ingestion_config.test_data_path,
             )
@@ -43,6 +43,6 @@ class Data_ingestion:
                 "Exited the initiate_data_ingestion method of Data ingestion class"
             )
 
-            return data_ingestion_artifact
+            return Data_ingestion_artifact
         except Exception as e:
             raise Xray_Exception(e, sys)

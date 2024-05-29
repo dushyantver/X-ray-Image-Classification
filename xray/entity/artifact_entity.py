@@ -1,5 +1,6 @@
 from dataclasses import dataclass
-from torch.utils.data.dataloader import Dataloader
+from torch.utils.data.dataloader import DataLoader
+
 
 
 @dataclass
