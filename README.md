@@ -1,5 +1,14 @@
 # X-ray-Image-Classification
 
+## Workflows
+
+- constants
+- config_entity
+- artifact_entity
+- components
+- pipeline
+- main
+
 ## How to setup
 
 ```bash

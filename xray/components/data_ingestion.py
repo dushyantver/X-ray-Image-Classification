@@ -2,13 +2,13 @@ import sys
 
 from xray.cloud_storage.s3_operations import s3_operations
 from xray.constant.training_pipeline import *
-from xray.entity.config_entity import data_ingestion_config
-from xray.entity.artifact_entity import data_ingestion_artifact
+from xray.entity.config_entity import DataIngestionConfig
+from xray.entity.artifact_entity import DataIngestionArtifact
 from xray.exception import Xray_Exception
 from xray.logger import logging
 
 class Data_ingestion:
-    def __init__(self, data_ingestion_config:data_ingestion_config):
+    def __init__(self, data_ingestion_config:DataIngestionConfig):
         self.data_ingestion_config = data_ingestion_config
 
         self.s3 = s3_operations()
@@ -27,14 +27,14 @@ class Data_ingestion:
         except Exception as e:
             raise Xray_Exception(e, sys)
         
-    def initiate_data_ingestion(self)->data_ingestion_artifact:
+    def initiate_data_ingestion(self)->DataIngestionArtifact:
         logging.info(
             "Entered the initiate_data_ingestion method of Data ingestion class"
         )
         try:
             self.get_data_from_s3()
 
-            Data_ingestion_artifact: data_ingestion_artifact = data_ingestion_artifact(
+            Data_ingestion_artifact: DataIngestionArtifact = DataIngestionArtifact(
                 train_file_path=self.data_ingestion_config.train_data_path,
                 test_file_path=self.data_ingestion_config.test_data_path,
             )
