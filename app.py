@@ -43,10 +43,6 @@ def save_image(uploaded_file):
             st.text_area(label="Prediction:", value="PNEUMONIA", height=100)
 
 
-
-
-
-
 if __name__ == "__main__":
     st.title("Xray lung classifier")
     uploaded_file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
