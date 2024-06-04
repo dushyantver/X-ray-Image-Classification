@@ -14,3 +14,7 @@
 ```bash
 conda create venv python==3.8
 ```
+
+```Run streamlit app
+streamlit run app.py
+```

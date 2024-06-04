@@ -10,5 +10,8 @@ tox
 flake8
 mypy
 black
+boto3
+mypy-boto3-s3
+streamlit 
 
 -e .
