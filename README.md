@@ -2,7 +2,7 @@
 
 #### In this project, a machine learning model based on a deep learning CNN architecture for computer vision is developed. This model will classify any X-ray image to determine whether a disease Pnemonia is present, aiding doctors in making better decisions. Various MLOps tools have been used to automate the entire ML cycle, and the model has been deployed in the cloud.
 
-![Xray Image](images\input.jpeg)
+![Xray Image](/images/input.jpeg)
 
 ## Data Preprocessing
 
@@ -20,7 +20,7 @@
 
 #### Confusion matrices is used for binary classification problem
 
-![Confusion Matrices](images\\confusion_matrix.png)
+![Confusion Matrices](/images/confusion_matrix.png)
 
 ## Workflows
 
