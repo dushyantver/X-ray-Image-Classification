@@ -20,6 +20,11 @@
 
 #### Confusion matrices is used for binary classification problem
 
+- Accuracy: 0.93 (or 93.33%)
+- Precision: 0.96 (or 96.43%)
+- Recall: 0.90 (or 90%)
+- F1 Score: 0.93 (or 93.10%)
+
 ![Confusion Matrices](/images/confusion_matrix.png)
 
 ## Workflows
