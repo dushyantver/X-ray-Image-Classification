@@ -18,7 +18,7 @@
 
 #### Confusion matrices is used for binary classification problem
 
-![Confusion Matrices][confusion_matrix.png]s
+![Confusion Matrices][confusion_matrix.png]
 
 ## Workflows
 
